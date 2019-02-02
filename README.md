@@ -1,14 +1,8 @@
-### hasi 🤙
+### watchoutfreedom 🤙
 
-> **No utilizar el theme en producción**.
+Wordpress theme.
 
-'hasi' viene del euskera y significa **empezar**, es un theme para experimentar y crear landing y verticales sencillos, mi idea es hacerlo modular y usarlo de base para crear varios themes sencillos.
+### Requerimnents
 
-### Detalles
-
-* Funciona con SASS
-* Editado con Sublime
-
-### Créditos
-
-Pwd by [gruncho](http://worldx3.com).
+· [Sass: Syntactically Awesome Style Sheets](https://sass-lang.com/).
+· [Wordpress](http://wordpress.org).
