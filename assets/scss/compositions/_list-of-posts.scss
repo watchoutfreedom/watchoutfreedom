@@ -1,0 +1,47 @@
+.list-of-posts {
+  @extend .grid-content;
+  @extend .flash_header;
+
+  align-items: stretch;
+  display: flex;
+  flex-flow: row wrap;
+
+  .post-resume {
+    background: $color-black;
+    flex: 0 1 100%;
+    height: 200px !important;
+    transition: flex .4s, width .4s, height .4s;
+  }
+
+  .Destacado {
+    flex: 0 1 100% !important;
+    height: 400px !important;
+    transition: flex .4s, width .4s, height .4s;
+  }
+}
+
+
+@media #{$breakpoints-medium} {
+  .list-of-posts {
+    .post-resume {
+      flex: 0 1 50% !important;
+      height: 400px !important;
+    }
+
+    .Destacado {
+      flex: 0 1 100% !important;
+    }
+  }
+}
+
+@media #{$breakpoints-large} {
+  .list-of-posts {
+    .post-resume {
+      flex: 0 1 33.3% !important;
+    }
+
+    .Destacado {
+      flex: 0 1 calc( 100% - 33.3% ) !important;
+    }
+  }
+}

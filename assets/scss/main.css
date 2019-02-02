@@ -1,0 +1,891 @@
+.section, .nav-posts, .page__content, .article-first__content {
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+
+@media only screen and (min-width: 768px) {
+  .section, .nav-posts, .page__content, .article-first__content {
+    margin-bottom: 3rem;
+    margin-top: 3rem; } }
+@media only screen and (min-width: 1024px) {
+  .section, .nav-posts, .page__content, .article-first__content {
+    margin-bottom: 4rem;
+    margin-top: 4rem; } }
+@media only screen and (min-width: 1280px) {
+  .section, .nav-posts, .page__content, .article-first__content {
+    margin-bottom: 5rem;
+    margin-top: 5rem; } }
+.flash_down, .product, .video, .idea {
+  animation: flash_down 1.5s linear both; }
+
+@keyframes flash_down {
+  0% {
+    opacity: 0;
+    transform: translateY(200px); }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+.flash_down_second {
+  animation: flash_down_second 1.25s linear both; }
+
+@keyframes flash_down_second {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+.flash_opacity {
+  animation: flash_opacity 3s linear both; }
+
+@keyframes flash_opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: .6; } }
+.flash_header, .list-of-posts {
+  animation: flash_header .6s linear both; }
+
+@keyframes flash_header {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem); }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+picture,
+img {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none;
+  list-style-type: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*:focus {
+  outline: 0px; }
+
+select {
+  -webkit-appearance: none; }
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+  font-family: Arial; }
+
+/* Remove the stupid outer glow in Webkit */
+input:focus {
+  outline: 0; }
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+/* All of our custom controls should be what we expect them to be */
+input,
+textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* These elements are usually rendered a certain way by the browser */
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Text Inputs
+-----------------------------------------------*/
+/* Button Controls
+-----------------------------------------------*/
+input[type=checkbox],
+input[type=radio] {
+  width: 13px;
+  height: 13px; }
+
+/* File Uploads
+-----------------------------------------------*/
+/* Search Input
+-----------------------------------------------*/
+/* Make webkit render the search input like a normal text field */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box; }
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+  display: none; }
+
+/* Buttons
+-----------------------------------------------*/
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto; }
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none; }
+
+/* Textarea
+-----------------------------------------------*/
+textarea {
+  /* Move the label to the top */
+  vertical-align: top;
+  /* Turn off scroll bars in IE unless needed */
+  overflow: auto; }
+
+/* Selects
+-----------------------------------------------*/
+select[multiple] {
+  /* Move the label to the top */
+  vertical-align: top; }
+
+/* avoid iPad/iPhone buttons style */
+input[type="submit"],
+button {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  background: #FCFCFC;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 62.5%;
+  font-weight: normal;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+strong {
+  font-weight: bold; }
+
+a {
+  color: inherit; }
+
+::-moz-selection {
+  background: #504FFF;
+  color: #fff; }
+
+::selection {
+  background: #504FFF;
+  color: #fff; }
+
+.grid-content, .page__content, .category__content, .list-of-posts,
+.grid,
+.nav-posts,
+.footer__content,
+.header__content,
+.article-first__content,
+.product__head,
+.product__content,
+.product__wrap,
+.video__content,
+.idea__content {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+.grid, .nav-posts, .footer__content, .header__content, .article-first__content, .product__head,
+.product__content, .product__wrap, .video__content, .idea__content {
+  max-width: 1200px; }
+
+.grid-content, .page__content, .category__content, .list-of-posts {
+  max-width: 980px; }
+
+.layout,
+.layout-grid {
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  width: 100%; }
+
+.layout-grid {
+  max-width: calc( 1200px + calc( 32px/2 ) );
+  width: 95%; }
+
+@media only screen and (min-width: 768px) {
+  .grid-content, .page__content, .category__content, .list-of-posts,
+  .grid,
+  .nav-posts,
+  .footer__content,
+  .header__content,
+  .article-first__content,
+  .product__head,
+  .product__content,
+  .product__wrap,
+  .video__content,
+  .idea__content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%; } }
+.picture {
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
+  .picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; }
+
+.category-link a {
+  color: #504FFF;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  margin-right: 0.85rem;
+  text-decoration: none; }
+
+.post-resume {
+  position: relative;
+  overflow: hidden; }
+  .post-resume img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+    opacity: .8;
+    height: 100%;
+    transition: opacity .4s; }
+  .post-resume .category-link .post-resume__link {
+    display: none; }
+  .post-resume .category-link a {
+    background: #504FFF;
+    color: #fff;
+    padding: .5rem;
+    font-size: .85rem;
+    font-weight: bold;
+    display: inline-block; }
+
+.post-resume__link {
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  transition: opacity .4s;
+  position: relative;
+  z-index: 50; }
+
+.post-resume__link:hover img {
+  opacity: .4; }
+
+.post-resume__content {
+  padding: 1rem;
+  z-index: 10;
+  width: 100%; }
+
+.post-resume__title,
+.post-resume__category {
+  position: absolute;
+  width: 100%;
+  padding: 1rem;
+  z-index: 50; }
+
+.post-resume__category {
+  top: 0;
+  left: 0;
+  padding-bottom: calc( 2rem/2 ); }
+
+.post-resume__title {
+  bottom: 0;
+  display: inline-block;
+  width: auto;
+  left: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 2rem;
+  font-weight: bold;
+  padding-bottom: 2rem; }
+
+.post-resume__paragraph {
+  display: none;
+  color: #686868;
+  font-size: 1rem;
+  line-height: 1.75rem; }
+
+.main, .product__info-box {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.85rem; }
+  .main div, .product__info-box div,
+  .main p,
+  .product__info-box p,
+  .main ul,
+  .product__info-box ul,
+  .main ol,
+  .product__info-box ol,
+  .main img,
+  .product__info-box img {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%; }
+  .main div, .product__info-box div {
+    margin: 2rem 0; }
+  .main img, .product__info-box img {
+    height: auto; }
+  .main h2, .product__info-box h2,
+  .main h3,
+  .product__info-box h3,
+  .main h4,
+  .product__info-box h4,
+  .main h5,
+  .product__info-box h5,
+  .main h6,
+  .product__info-box h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1rem 0 2rem 0; }
+  .main ol, .product__info-box ol,
+  .main ul,
+  .product__info-box ul {
+    padding-left: 1.5rem; }
+    .main ol li, .product__info-box ol li,
+    .main ul li,
+    .product__info-box ul li {
+      padding-bottom: .75rem; }
+  .main ul, .product__info-box ul {
+    list-style-type: disc; }
+  .main ol, .product__info-box ol {
+    list-style-type: upper-roman; }
+  .main b, .product__info-box b,
+  .main strong,
+  .product__info-box strong {
+    font-weight: bold; }
+  .main i, .product__info-box i {
+    font-style: italic; }
+  .main a, .product__info-box a {
+    color: #504FFF;
+    text-decoration: none; }
+  .main a:hover, .product__info-box a:hover {
+    text-decoration: underline; }
+  .main iframe, .product__info-box iframe {
+    width: 100%;
+    height: 400px; }
+  .main blockquote, .product__info-box blockquote {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    font-size: 1.25rem; }
+
+@media only screen and (min-width: 1024px) {
+  .main h2, .product__info-box h2,
+  .main h3,
+  .product__info-box h3,
+  .main h4,
+  .product__info-box h4,
+  .main h5,
+  .product__info-box h5,
+  .main h6,
+  .product__info-box h6 {
+    font-size: 2rem;
+    line-height: 2.5rem; } }
+.nav-posts {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+
+.nav-posts__back a,
+.nav-posts__next a {
+  background: #504FFF;
+  color: #fff;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: .85rem;
+  padding: 1rem;
+  text-decoration: none; }
+
+.page {
+  padding-bottom: 0;
+  padding-top: 0; }
+
+.page__header {
+  background: #504FFF;
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center; }
+
+.page__title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 2rem; }
+
+@media only screen and (min-width: 1024px) {
+  .page__header {
+    padding: 8rem 0; } }
+.footer {
+  background: #111;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 4rem 0; }
+
+.footer__content a {
+  text-decoration: none;
+  transition: opacity .4s; }
+.footer__content a:hover {
+  opacity: .6; }
+
+.footer__credits {
+  font-size: .95rem;
+  padding-bottom: 1rem; }
+
+.footer__cc {
+  color: #686868;
+  font-size: .75rem; }
+  .footer__cc a {
+    text-decoration: none; }
+  .footer__cc a:hover {
+    text-decoration: underline; }
+
+.footer__link {
+  border-bottom: 1px solid #fff;
+  text-decoration: none; }
+
+.header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 1.5rem 0; }
+
+.header__content {
+  align-items: center; }
+
+.header__logo {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  transition: opacity .4s; }
+
+.header__logo:hover {
+  opacity: .6; }
+
+.header__link, .header__list li a {
+  color: #686868;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 1rem 1rem 1rem 0;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: background .2s, color .4s; }
+
+.header__link:hover, .header__list li a:hover {
+  color: #111; }
+
+.header__link--active {
+  color: #111; }
+
+.header__list li {
+  display: inline-block; }
+
+@media only screen and (min-width: 768px) {
+  .header__content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+
+  .header__link, .header__list li a {
+    padding: 1rem; }
+
+  .header__link:hover, .header__list li a:hover {
+    background: rgba(0, 0, 0, 0.05); } }
+@media only screen and (min-width: 1280px) {
+  .header {
+    padding: 2rem 0; } }
+.category {
+  padding-bottom: 0;
+  padding-top: 0; }
+
+.category__header {
+  background: #504FFF;
+  color: #fff;
+  padding: 3rem 0; }
+
+.category__title,
+.category__subtitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+.category__title {
+  font-size: 2rem;
+  padding: 1rem 0 2rem 0; }
+
+.category__message {
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 4rem 0; }
+
+.category__subtitle {
+  font-size: .85rem; }
+
+@media only screen and (min-width: 1024px) {
+  .category__header {
+    padding: 8rem 0; } }
+.article-first__thumbnail .picture {
+  position: relative;
+  overflow: hidden;
+  background: #686868; }
+  .article-first__thumbnail .picture:before {
+    content: '';
+    display: block;
+    padding-top: 33.3333333333%;
+    width: 100%; }
+  .article-first__thumbnail .picture > img {
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%; }
+
+.article-first__title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 1rem 0; }
+
+@media only screen and (min-width: 1024px) {
+  .article-first__single-sidebar {
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row nowrap; }
+
+  .article-first__post {
+    flex: 0 1 70%; }
+
+  .article-first__sidebar {
+    flex: 0 1 20%; }
+
+  .article-first__title {
+    font-size: 3rem; } }
+.list-of-posts {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row wrap; }
+  .list-of-posts .post-resume {
+    background: #111;
+    flex: 0 1 100%;
+    height: 200px !important;
+    transition: flex .4s, width .4s, height .4s; }
+  .list-of-posts .Destacado {
+    flex: 0 1 100% !important;
+    height: 400px !important;
+    transition: flex .4s, width .4s, height .4s; }
+
+@media only screen and (min-width: 768px) {
+  .list-of-posts .post-resume {
+    flex: 0 1 50% !important;
+    height: 400px !important; }
+  .list-of-posts .Destacado {
+    flex: 0 1 100% !important; } }
+@media only screen and (min-width: 1024px) {
+  .list-of-posts .post-resume {
+    flex: 0 1 33.3% !important; }
+  .list-of-posts .Destacado {
+    flex: 0 1 calc( 100% - 33.3% ) !important; } }
+.product__head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap; }
+
+.product__thumb {
+  margin-bottom: 1rem; }
+
+.product__info {
+  margin-bottom: 2rem; }
+
+.product__thumb {
+  background: #686868;
+  width: 100%; }
+  .product__thumb .picture {
+    position: relative;
+    overflow: hidden;
+    background: #686868; }
+    .product__thumb .picture:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+      width: 100%; }
+    .product__thumb .picture > img {
+      object-fit: cover;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      left: 0;
+      width: 100%; }
+
+.product__info {
+  flex: 0 1 40%; }
+
+.product__title {
+  color: #111;
+  font-size: 2rem;
+  font-weight: bold; }
+
+.product__price,
+.product__link {
+  margin: 1rem 0; }
+
+.product__price {
+  color: #111;
+  font-size: 1.25rem; }
+
+.product__description {
+  color: #686868;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  padding-bottom: 1rem; }
+
+.product__link {
+  background: #504FFF;
+  color: #fff;
+  display: block;
+  font-size: 1.15rem;
+  font-weight: bold;
+  padding: 1.25rem 0;
+  text-align: center;
+  text-decoration: none; }
+
+.product__security {
+  color: #686868;
+  font-size: .85rem;
+  text-align: center; }
+
+.product__content {
+  color: #686868;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  max-width: 640px;
+  padding-bottom: 4rem;
+  margin-top: 3rem; }
+  .product__content p {
+    margin-bottom: 1rem; }
+
+.product__wrap {
+  margin-top: 4rem;
+  margin-bottom: 2rem; }
+
+.product__list-of-boxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+
+.product__box {
+  flex: 0 1 100%;
+  margin-bottom: 2rem; }
+
+.product__subtitle {
+  color: #686868;
+  font-size: 1.55rem;
+  padding-bottom: 1rem; }
+
+@media only screen and (min-width: 768px) {
+  .product__head {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap; }
+
+  .product__box {
+    flex: 0 1 45%;
+    margin-bottom: 2rem; }
+
+  .product__thumb {
+    flex: 0 1 50%;
+    width: 50%; } }
+@media only screen and (min-width: 1024px) {
+  .product__box {
+    flex: 0 1 30%;
+    margin-bottom: 2rem; } }
+.video__content {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  padding: 6rem 0; }
+
+.video__thumb {
+  background: #686868;
+  height: 600px;
+  width: 100%; }
+
+.video__title {
+  color: #111;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3.1rem; }
+
+.video__head {
+  align-items: flex-start;
+  flex: 0 1 28%; }
+
+.video__author {
+  padding-top: 2rem;
+  color: #686868;
+  font-size: 1rem; }
+  .video__author span {
+    text-decoration: underline; }
+
+.video__info {
+  flex: 0 1 70%;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  column-count: 2;
+  column-gap: 3rem; }
+  .video__info p {
+    padding: 0 0 1rem 0;
+    text-align: justify; }
+
+.idea__content {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.idea__title,
+.idea__description {
+  max-width: 720px; }
+
+.idea__title {
+  color: #111;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3.5rem; }
+
+.idea__description {
+  color: #686868;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding-top: 1rem; }
+
+.idea__thumb {
+  background: #686868;
+  margin: 2rem 0;
+  width: 100%; }
+  .idea__thumb .picture {
+    position: relative;
+    overflow: hidden;
+    background: #686868; }
+    .idea__thumb .picture:before {
+      content: '';
+      display: block;
+      padding-top: 66.6666666667%;
+      width: 100%; }
+    .idea__thumb .picture > img {
+      object-fit: cover;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      left: 0;
+      width: 100%; }
+
+.idea__content--more {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  max-width: 640px;
+  padding-bottom: 4rem; }
+  .idea__content--more p {
+    padding: 0 0 1rem 0; }
+
+@media only screen and (min-width: 768px) {
+  .idea__thumb .picture {
+    position: relative;
+    overflow: hidden;
+    background: #686868; }
+    .idea__thumb .picture:before {
+      content: '';
+      display: block;
+      padding-top: 33.3333333333%;
+      width: 100%; }
+    .idea__thumb .picture > img {
+      object-fit: cover;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      left: 0;
+      width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

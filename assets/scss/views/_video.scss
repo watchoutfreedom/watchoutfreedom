@@ -1,0 +1,53 @@
+.video {
+  @extend .flash_down;
+}
+
+.video__content {
+  @extend .grid;
+
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  padding: 6rem 0;
+}
+
+.video__thumb {
+  background: $color-gray;
+  height: 600px;
+  width: 100%;
+}
+
+.video__title {
+  color: $color-black;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3.1rem;
+}
+
+.video__head {
+  align-items: flex-start;
+  flex: 0 1 28%;
+}
+
+.video__author {
+  padding-top: 2rem;
+  color: $color-gray;
+  font-size: 1rem;
+
+  span {
+    text-decoration: underline;
+  }
+}
+
+.video__info {
+  flex: 0 1 70%;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  column-count: 2;
+  column-gap: 3rem;
+
+  p {
+    padding: 0 0 1rem 0;
+    text-align: justify;
+  }
+}

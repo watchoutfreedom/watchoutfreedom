@@ -1,0 +1,94 @@
+$post-resume-pagragraph-color: $color-gray;
+$post-resume-padding: 2rem;
+$post-resume-title-font-family: $font-family-first;
+$post-resume-category-padding: calc( #{$post-resume-padding}/2 );
+
+.post-resume {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+    opacity: .8;
+    height: 100%;
+    transition: opacity .4s;
+  }
+
+  .category-link {
+    .post-resume__link {
+      display: none;
+    }
+
+    a {
+      background: $color-corporative;
+      color: $color-white;
+      padding: .5rem;
+      font-size: .85rem;
+      font-weight: bold;
+      display: inline-block;
+    }
+  }
+}
+
+.post-resume__link {
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  transition: opacity .4s;
+  position: relative;
+  z-index: 50;
+}
+
+.post-resume__link:hover {
+  img {
+    opacity: .4;
+  }
+}
+
+.post-resume__content {
+  padding: 1rem;
+  z-index: 10;
+  width: 100%;
+}
+
+.post-resume__title,
+.post-resume__category {
+  position: absolute;
+  width: 100%;
+  padding: 1rem;
+  z-index: 50;
+}
+
+.post-resume__category {
+  top: 0;
+  left: 0;
+  padding-bottom: $post-resume-category-padding;
+}
+
+.post-resume__title {
+  bottom: 0;
+  display: inline-block;
+  width: auto;
+  left: 0;
+  font-family: $post-resume-title-font-family;
+  font-size: 1.5rem;
+  color: $color-white;
+  line-height: 2rem;
+  font-weight: bold;
+  padding-bottom: $post-resume-padding;
+}
+
+.post-resume__paragraph {
+  display: none;
+  color: $post-resume-pagragraph-color;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}

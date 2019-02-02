@@ -1,0 +1,1 @@
+<?php get_header(); ?>  <?php get_template_part('modules/compositions/list-of-posts'); ?><?php get_footer(); ?>

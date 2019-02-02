@@ -1,0 +1,14 @@
+$category-link-color: $color-corporative;
+$category-link-font-family: $font-family-first;
+$category-link-space: .85rem;
+
+.category-link {
+  a {
+    color: $category-link-color;
+    display: inline-block;
+    font-family: $category-link-font-family;
+    font-size: 1rem;
+    margin-right: $category-link-space;
+    text-decoration: none;
+  }
+}
